@@ -41,15 +41,18 @@
             <section class="css-section">
                 <h2>¿Qué es CSS?</h2>
                 <p>
-                    CSS es un lenguaje de hojas de estilo que se utiliza para describir la presentación de un documento HTML.
-                    Permite controlar el diseño, los colores, las fuentes y otros aspectos visuales de una página web.
+                    CSS (Cascading Style Sheets o Hojas de Estilo en Cascada) es un lenguaje utilizado para describir la presentación de un documento HTML. 
+                    Mientras HTML define la estructura del contenido (títulos, párrafos, listas, etc.), CSS se encarga de cómo se ve ese contenido 
+                    (colores, tamaños, márgenes, posiciones, fuentes, etc.).
                 </p>
-                <div class="code-example">
-                    <pre><code>body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-}</code></pre>
-                </div>
+                <p>
+                    CSS permite separar el diseño del contenido, lo cual facilita:
+                </p>
+                <ul>
+                    <li>El mantenimiento del código</li>
+                    <li>La reutilización de estilos</li>
+                    <li>Una mejor organización del código</li>
+                </ul>
             </section>
 
             <section class="css-section">
@@ -57,33 +60,34 @@
                 <div class="components-grid">
                     <div class="component-card">
                         <h3>Selectores</h3>
-                        <p>Los selectores son patrones que se utilizan para seleccionar los elementos HTML a los que se aplicarán los estilos.</p>
-                        <ul>
-                            <li>Selectores de tipo: <code>p</code>, <code>h1</code>, <code>div</code></li>
-                            <li>Selectores de clase: <code>.clase</code></li>
-                            <li>Selectores de ID: <code>#id</code></li>
-                        </ul>
+                        <p>Son la parte del CSS que indica a qué elementos HTML se le aplicarán los estilos.</p>
+                        <div class="code-example">
+                            <pre><code>p {
+/* Estilos para todos los 
+párrafos */
+}</code></pre>
+                        </div>
                     </div>
 
                     <div class="component-card">
                         <h3>Propiedades</h3>
-                        <p>Las propiedades son las características que queremos modificar en los elementos seleccionados.</p>
-                        <ul>
-                            <li><code>color</code></li>
-                            <li><code>font-size</code></li>
-                            <li><code>margin</code></li>
-                            <li><code>padding</code></li>
-                        </ul>
+                        <p>Son los aspectos visuales que se quieren modificar del elemento HTML.</p>
+                        <div class="code-example">
+                            <pre><code>color: blue;
+font-size: 16px;
+background-color: white;</code></pre>
+                        </div>
                     </div>
 
                     <div class="component-card">
                         <h3>Valores</h3>
-                        <p>Los valores son las especificaciones que asignamos a las propiedades.</p>
-                        <ul>
-                            <li>Colores: <code>#ff0000</code>, <code>red</code></li>
-                            <li>Tamaños: <code>16px</code>, <code>2em</code></li>
-                            <li>Unidades: <code>px</code>, <code>%</code>, <code>rem</code></li>
-                        </ul>
+                        <p>Son los ajustes específicos que le das a las propiedades.</p>
+                        <div class="code-example">
+                            <pre><code>color: red; /* red 
+es el valor */
+font-size: 16px; /* 16px 
+es el valor */</code></pre>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -92,39 +96,59 @@
                 <h2>Tipos de Selectores</h2>
                 <div class="selectors-grid">
                     <div class="selector-card">
-                        <h3>Selectores por Tipo</h3>
-                        <p>Seleccionan elementos basados en su etiqueta HTML.</p>
+                        <h3>Selector por Tipo</h3>
+                        <p>Selecciona todos los elementos de un mismo tipo (etiqueta HTML).</p>
                         <div class="code-example">
-                            <pre><code>p {
-    color: blue;
+                            <pre><code>h1 {
+    color: green;
 }</code></pre>
                         </div>
+                        <p>Afecta a todos los encabezados &lt;h1&gt; del documento.</p>
                     </div>
 
                     <div class="selector-card">
-                        <h3>Selectores por Clase</h3>
-                        <p>Seleccionan elementos que tienen un atributo class específico.</p>
+                        <h3>Selector por Clase (.)</h3>
+                        <p>Selecciona todos los elementos que tienen un atributo class específico.</p>
                         <div class="code-example">
-                            <pre><code>.destacado {
+                            <pre><code>.titulo-principal {
     font-weight: bold;
 }</code></pre>
                         </div>
+                        <p>Afecta a cualquier elemento con class="titulo-principal". Se puede reutilizar en varios elementos.</p>
                     </div>
 
                     <div class="selector-card">
-                        <h3>Selectores por ID</h3>
-                        <p>Seleccionan un elemento único con un atributo id específico.</p>
+                        <h3>Selector por Identificador (#)</h3>
+                        <p>Selecciona un solo elemento con un atributo id específico.</p>
                         <div class="code-example">
-                            <pre><code>#encabezado {
-    font-size: 24px;
+                            <pre><code>#menu {
+    background-color: gray;
 }</code></pre>
                         </div>
+                        <p>Afecta únicamente al elemento que tenga id="menu". El id debe ser único en toda la página.</p>
                     </div>
                 </div>
+            </section>
+
+            <section class="css-section">
+                <h2>Ejemplo Completo</h2>
+                <div class="code-example">
+                    <pre><code>p {
+    color: blue;
+    font-size: 16px;
+}</code></pre>
+                </div>
+                <p>En este ejemplo:</p>
+                <ul>
+                    <li><code>p</code> es el selector</li>
+                    <li><code>color</code> y <code>font-size</code> son propiedades</li>
+                    <li><code>blue</code> y <code>16px</code> son los valores asignados</li>
+                </ul>
             </section>
         </article>
 
         <a href="blog.html" class="back-link">← Volver al Blog</a>
     </div>
 </body>
+</html> 
 </html> 
