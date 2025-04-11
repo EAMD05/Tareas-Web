@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Blog de Desarrollo Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/blog_css.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="name">Erick A. M.</div>
+        <div class="nav-links">
+            <a href="blog.html">Inicio</a>
+            <a href="git-workflow.html">Git & GitHub</a>
+            <a href="terminal-mac.html">Terminal Mac</a>
+            <a href="css.html">CSS</a>
+            <a href="about.html">Sobre Mí</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="../index.html" class="projects-btn">Link a Todos los Proyectos</a>
+            <a href="mailto:erickamdgz@gmail.com" class="contact-btn">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="main-content">
+        <h1 class="welcome-title">CSS: Estilizando la Web</h1>
+        <p class="description">
+            CSS (Cascading Style Sheets) es el lenguaje que utilizamos para dar estilo y diseño a nuestras páginas web.
+            Aprende los conceptos fundamentales y cómo aplicarlos efectivamente.
+        </p>
+
+        <!-- Artículo Principal -->
+        <article class="css-article">
+            <section class="css-section">
+                <h2>¿Qué es CSS?</h2>
+                <p>
+                    CSS es un lenguaje de hojas de estilo que se utiliza para describir la presentación de un documento HTML.
+                    Permite controlar el diseño, los colores, las fuentes y otros aspectos visuales de una página web.
+                </p>
+                <div class="code-example">
+                    <pre><code>body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}</code></pre>
+                </div>
+            </section>
+
+            <section class="css-section">
+                <h2>Componentes Básicos de CSS</h2>
+                <div class="components-grid">
+                    <div class="component-card">
+                        <h3>Selectores</h3>
+                        <p>Los selectores son patrones que se utilizan para seleccionar los elementos HTML a los que se aplicarán los estilos.</p>
+                        <ul>
+                            <li>Selectores de tipo: <code>p</code>, <code>h1</code>, <code>div</code></li>
+                            <li>Selectores de clase: <code>.clase</code></li>
+                            <li>Selectores de ID: <code>#id</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>Propiedades</h3>
+                        <p>Las propiedades son las características que queremos modificar en los elementos seleccionados.</p>
+                        <ul>
+                            <li><code>color</code></li>
+                            <li><code>font-size</code></li>
+                            <li><code>margin</code></li>
+                            <li><code>padding</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>Valores</h3>
+                        <p>Los valores son las especificaciones que asignamos a las propiedades.</p>
+                        <ul>
+                            <li>Colores: <code>#ff0000</code>, <code>red</code></li>
+                            <li>Tamaños: <code>16px</code>, <code>2em</code></li>
+                            <li>Unidades: <code>px</code>, <code>%</code>, <code>rem</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="css-section">
+                <h2>Tipos de Selectores</h2>
+                <div class="selectors-grid">
+                    <div class="selector-card">
+                        <h3>Selectores por Tipo</h3>
+                        <p>Seleccionan elementos basados en su etiqueta HTML.</p>
+                        <div class="code-example">
+                            <pre><code>p {
+    color: blue;
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="selector-card">
+                        <h3>Selectores por Clase</h3>
+                        <p>Seleccionan elementos que tienen un atributo class específico.</p>
+                        <div class="code-example">
+                            <pre><code>.destacado {
+    font-weight: bold;
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="selector-card">
+                        <h3>Selectores por ID</h3>
+                        <p>Seleccionan un elemento único con un atributo id específico.</p>
+                        <div class="code-example">
+                            <pre><code>#encabezado {
+    font-size: 24px;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <a href="blog.html" class="back-link">← Volver al Blog</a>
+    </div>
+</body>
+</html> 
